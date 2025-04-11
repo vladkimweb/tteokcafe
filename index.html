@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>다옴떡카페 - 프리미엄 전통 떡 카페</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>전통 한국 떡 – 신선한 재료, 최고의 맛</title>
+
+    <!-- Основные метатеги -->
+    <meta
+      name="description"
+      content="전통 한국 떡을 판매하는 전문점. 신선한 재료로 만든 최고의 맛을 경험하세요! 온라인 주문 가능."
+    />
+    <meta
+      name="keywords"
+      content="떡, 한국 떡, 전통 떡, 송편, 인절미, 찹쌀떡, 디저트, 한국 디저트"
+    />
+    <meta name="author" content="vladislav kim" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="전통 한국 떡 – 신선한 재료, 최고의 맛" />
+    <meta
+      property="og:description"
+      content="전통 한국 떡을 판매하는 전문점. 신선한 재료로 만든 최고의 맛을 경험하세요!"
+    />
+    <meta property="og:image" content="https://example.com/tok-main.jpg" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="전통 한국 떡 – 신선한 재료, 최고의 맛" />
+    <meta
+      name="twitter:description"
+      content="전통 한국 떡을 판매하는 전문점. 신선한 재료로 만든 최고의 맛을 경험하세요!"
+    />
+    <meta name="twitter:image" content="https://example.com/tok-main.jpg" />
+
+    <!-- Язык сайта -->
+    <meta name="language" content="ko" />
+    <meta name="geo.region" content="KR" />
+    <meta name="geo.placename" content="Busan, South Korea" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/image/logo.jpeg" alt="다옴떡카페 로고" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#products">인기 떡</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">대표 인사말</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#location">찾아오시는 길</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#delivery">배송 안내</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="hero-section bg-dark text-white"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url('/image/gallery3.jpeg') center/cover;
+      "
+    >
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h1 class="display-4 fw-bold mb-4">정성을 담은 따뜻한 공간, 다옴떡카페</h1>
+            <p class="lead mb-5">
+              정성이 가득 담긴 떡 한 조각과 따뜻한 차 한 잔,<br />소중한 사람들과 함께하는 포근한
+              시간
+            </p>
+            <a href="#products" class="btn btn-primary btn-lg px-4">인기 메뉴 보기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок с философией кафе -->
+    <!-- <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="/image/gallery2.jpeg"
+              alt="수제 떡 만들기"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+          <div class="col-lg-6 py-4">
+            <h2 class="fw-light mb-4">
+              <span class="border-bottom border-3 border-primary"
+                >떡 한 조각에 담긴 따뜻한 마음</span
+              >
+            </h2>
+            <p class="lead">예로부터 기쁜 날, 또는 마음을 나누고 싶은 순간에 늘 함께했던 떡.</p>
+            <p>
+              요즘도 뜻깊은 자리에서 감사의 마음을 전할 때,<br />정성 가득한 떡 한 조각이 참 좋은
+              선물이 아닐까요?<br />이런 마음에서 다옴떡카페가 구서동에서 시작되었습니다.
+            </p>
+
+            <div class="bg-white p-4 mt-4 rounded shadow-sm">
+              <p class="mb-0">
+                "우리 가족이 먹는다는 마음으로, 좋은 재료가 좋은 떡을 만든다는 믿음으로<br />매일
+                정성껏 떡을 만듭니다."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Блок с названием и философией -->
+    <!-- <section class="py-5">
+      <div class="container text-center">
+        <h2 class="display-5 mb-4">'다옴'의 의미</h2>
+        <div class="col-lg-8 mx-auto">
+          <p class="fs-5">
+            '다옴'은 세상의 좋은 일이 모두 온다는 뜻을 가진 순 우리말입니다.<br />
+            찾아주시는 모든 분들께 좋은 일과 행복이 가득하길 바라는 마음을 담아<br />
+            금정구에 있는 다옴떡카페는 따뜻한 감성의 공간에서 정성껏 만든 떡을 준비했습니다.
+          </p>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Секция с фирменными меню -->
+    <section id="menu" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">다옴떡카페 시그니처 메뉴</h2>
+
+        <div class="row g-4">
+          <!-- Меню 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title text-primary">설기류</h5>
+                <p class="card-text">
+                  포슬포슬한 식감에 꿀을 넣어 달콤함을 더한 시그니처 떡<br />
+                  <small>(꿀설기/초코/딸기/단호박/쑥)</small>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Меню 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title text-primary">찹쌀떡</h5>
+                <p class="card-text">
+                  수제 팥앙금과 고소한 견과류가 가득한 쫄깃한 찹쌀떡<br />
+                  <small>(쑥/흑임자/단호박/흑임자)</small>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Меню 3 -->
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title text-primary">선물세트</h5>
+                <p class="card-text">
+                  개별 포장된 고급 수제떡,<br />감사한 마음을 전하는 특별한 선물
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Меню 4 -->
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title text-primary">답례떡</h5>
+                <p class="card-text">
+                  원하는 구성으로 준비하는 맞춤형 답례떡, 소중한 순간을 더욱 의미 있게!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Меню 5 -->
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title text-primary">떡케이크</h5>
+                <p class="card-text">
+                  특별한 날, 특별한 분께 정성스러운 떡케이크로 마음을 전하세요.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">다옴떡카페의 인기 메뉴</h2>
+        <p class="text-center mb-5">
+          전통과 현대의 조화를 이룬 다옴떡카페의 특별한 떡들을 만나보세요.
+        </p>
+
+        <div class="row">
+          <!-- Product 1 -->
+          <div class="col-md-3">
+            <div class="product-card">
+              <img src="/image/1.jpeg" class="card-img-top product-img" alt="꿀떡" />
+              <div class="card-body">
+                <h5 class="card-title">꿀떡 세트</h5>
+                <p class="card-text">
+                  달콤한 꿀이 가득 들어간 전통 꿀떡. 부드러운 식감과 은은한 단맛이 일품입니다.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="h5">17,000원</p>
+                  <a
+                    href="https://smartstore.naver.com/daom_ricecake_cafe/products/11656438849"
+                    class="btn btn-primary"
+                    >주문하기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="col-md-3">
+            <div class="product-card">
+              <img src="/image/2.jpeg" class="card-img-top product-img" alt="백설기" />
+              <div class="card-body">
+                <h5 class="card-title">백설기 세트</h5>
+                <p class="card-text">
+                  고소한 콩가루와 부드러운 떡의 완벽한 조화. 다옴떡카페의 시그니처 메뉴입니다.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="h5">16,000원</p>
+                  <a
+                    href="https://smartstore.naver.com/daom_ricecake_cafe/products/11656418078"
+                    class="btn btn-primary"
+                    >주문하기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="col-md-3">
+            <div class="product-card">
+              <img src="/image/3.jpeg" class="card-img-top product-img" alt="송편" />
+              <div class="card-body">
+                <h5 class="card-title">수제 송편</h5>
+                <p class="card-text">
+                  쫄깃한 식감과 다양한 소들이 어우러진 수제 송편. 명절 선물로도 인기 있습니다.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="h5">30,000원</p>
+                  <a
+                    href="https://smartstore.naver.com/daom_ricecake_cafe/products/11656383095"
+                    class="btn btn-primary"
+                    >주문하기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="col-md-3">
+            <div class="product-card">
+              <img src="/image/4.jpeg" class="card-img-top product-img" alt="송편" />
+              <div class="card-body">
+                <h5 class="card-title">수제 송편</h5>
+                <p class="card-text">
+                  쫄깃한 식감과 다양한 소들이 어우러진 수제 송편. 명절 선물로도 인기 있습니다.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="h5">25,000원</p>
+                  <a
+                    href="https://smartstore.naver.com/daom_ricecake_cafe/products/11614666913"
+                    class="btn btn-primary"
+                    >주문하기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="col-md-3">
+            <div class="product-card">
+              <img src="/image/5.jpeg" class="card-img-top product-img" alt="송편" />
+              <div class="card-body">
+                <h5 class="card-title">수제 송편</h5>
+                <p class="card-text">
+                  쫄깃한 식감과 다양한 소들이 어우러진 수제 송편. 명절 선물로도 인기 있습니다.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="h5">25,000원</p>
+                  <a
+                    href="https://smartstore.naver.com/daom_ricecake_cafe/products/11614655414"
+                    class="btn btn-primary"
+                    >주문하기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="col-md-3">
+            <div class="product-card">
+              <img src="/image/6.jpeg" class="card-img-top product-img" alt="송편" />
+              <div class="card-body">
+                <h5 class="card-title">수제 송편</h5>
+                <p class="card-text">
+                  쫄깃한 식감과 다양한 소들이 어우러진 수제 송편. 명절 선물로도 인기 있습니다.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="h5">20,000원</p>
+                  <a
+                    href="https://smartstore.naver.com/daom_ricecake_cafe/products/11614410393"
+                    class="btn btn-primary"
+                    >주문하기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 7 -->
+          <div class="col-md-3">
+            <div class="product-card">
+              <img src="/image/7.jpeg" class="card-img-top product-img" alt="송편" />
+              <div class="card-body">
+                <h5 class="card-title">수제 송편</h5>
+                <p class="card-text">
+                  쫄깃한 식감과 다양한 소들이 어우러진 수제 송편. 명절 선물로도 인기 있습니다.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="h5">25,000원</p>
+                  <a
+                    href="https://smartstore.naver.com/daom_ricecake_cafe/products/11614320533"
+                    class="btn btn-primary"
+                    >주문하기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 8 -->
+          <div class="col-md-3">
+            <div class="product-card">
+              <img src="/image/8.jpeg" class="card-img-top product-img" alt="송편" />
+              <div class="card-body">
+                <h5 class="card-title">수제 송편</h5>
+                <p class="card-text">
+                  쫄깃한 식감과 다양한 소들이 어우러진 수제 송편. 명절 선물로도 인기 있습니다.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="h5">15,000원</p>
+                  <a
+                    href="https://smartstore.naver.com/daom_ricecake_cafe/products/11493749860"
+                    class="btn btn-primary"
+                    >주문하기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 9 -->
+          <div class="col-md-3">
+            <div class="product-card">
+              <img src="/image/9.jpeg" class="card-img-top product-img" alt="송편" />
+              <div class="card-body">
+                <h5 class="card-title">수제 송편</h5>
+                <p class="card-text">
+                  쫄깃한 식감과 다양한 소들이 어우러진 수제 송편. 명절 선물로도 인기 있습니다.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="h5">18,000원</p>
+                  <a
+                    href="https://smartstore.naver.com/daom_ricecake_cafe/products/11288826364"
+                    class="btn btn-primary"
+                    >주문하기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 10 -->
+          <div class="col-md-3">
+            <div class="product-card">
+              <img src="/image/10.jpeg" class="card-img-top product-img" alt="송편" />
+              <div class="card-body">
+                <h5 class="card-title">수제 송편</h5>
+                <p class="card-text">
+                  쫄깃한 식감과 다양한 소들이 어우러진 수제 송편. 명절 선물로도 인기 있습니다.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="h5">16,000원</p>
+                  <a
+                    href="https://smartstore.naver.com/daom_ricecake_cafe/products/11288820297"
+                    class="btn btn-primary"
+                    >주문하기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 11 -->
+          <div class="col-md-3">
+            <div class="product-card">
+              <img src="/image/11.jpeg" class="card-img-top product-img" alt="송편" />
+              <div class="card-body">
+                <h5 class="card-title">수제 송편</h5>
+                <p class="card-text">
+                  쫄깃한 식감과 다양한 소들이 어우러진 수제 송편. 명절 선물로도 인기 있습니다.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="h5">16,000원</p>
+                  <a
+                    href="https://smartstore.naver.com/daom_ricecake_cafe/products/11281421805"
+                    class="btn btn-primary"
+                    >주문하기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 12 -->
+          <div class="col-md-3">
+            <div class="product-card">
+              <img src="/image/12.jpeg" class="card-img-top product-img" alt="송편" />
+              <div class="card-body">
+                <h5 class="card-title">수제 송편</h5>
+                <p class="card-text">
+                  쫄깃한 식감과 다양한 소들이 어우러진 수제 송편. 명절 선물로도 인기 있습니다.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="h5">20,000원</p>
+                  <a
+                    href="https://smartstore.naver.com/daom_ricecake_cafe/products/11148751773"
+                    class="btn btn-primary"
+                    >주문하기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 13 -->
+          <div class="col-md-3">
+            <div class="product-card">
+              <img src="/image/13.jpg" class="card-img-top product-img" alt="송편" />
+              <div class="card-body">
+                <h5 class="card-title">수제 송편</h5>
+                <p class="card-text">
+                  쫄깃한 식감과 다양한 소들이 어우러진 수제 송편. 명절 선물로도 인기 있습니다.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="h5">3,500원</p>
+                  <p
+                    class="text-muted mb-0"
+                    style="text-decoration: line-through; font-size: 0.9rem"
+                  >
+                    5,500원
+                  </p>
+                  <a
+                    href="https://smartstore.naver.com/daom_ricecake_cafe/products/10524076371"
+                    class="btn btn-primary"
+                    >주문하기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Products 4-13 would follow the same pattern -->
+          <!-- For brevity, I'm showing 3 products but you would add 10 more -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2 class="mb-4">대표 인사말</h2>
+            <div class="ceo-message">
+              <p>안녕하십니까. 다옴떡카페 대표 김정환입니다.</p>
+              <p>
+                예로부터 기쁜 일, 슬픈 일 등 항상 함께하고 나누는 음식인 떡을 요즘 시대에 서로
+                선물을 하거나 좋은 자리에 감사함을 표현하고 싶을 때 정성을 가득 담은 떡을 선물하면
+                어떨까 하는 마음으로 시작한 다옴입니다.
+              </p>
+              <p>
+                우리 가족이 먹는다는 마음으로 항상 정성을 다합니다. 좋은 쌀, 좋은 재료, 무방부제
+                신념으로 건강을 지키고 아울러 맛을 담은 떡을 제공합니다.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img src="image/gallery10.jpeg" class="img-fluid rounded" alt="대표 김정환" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">다옴떡카페 갤러리</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="/image/gallery3.jpeg" class="img-fluid gallery-img" alt="카페 내부" />
+          </div>
+          <div class="col-md-3">
+            <img src="/image/gallery8.jpeg" class="img-fluid gallery-img" alt="떡 만들기" />
+          </div>
+          <div class="col-md-3">
+            <img src="/image/gallery6.jpeg" class="img-fluid gallery-img" alt="떡 세트" />
+          </div>
+          <div class="col-md-3">
+            <img src="/image/gallery7.jpeg" class="img-fluid gallery-img" alt="카페 분위기" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Delivery Section -->
+    <section id="location" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <h2 class="mb-4">찾아오시는 길</h2>
+            <p class="mb-4">
+              <i class="bi bi-geo-alt-fill"></i> 부산광역시 금정구 금강로 503 롯데캐슬2단지 상가
+              B1(씨에스마트 옆)
+            </p>
+            <div class="ratio ratio-16x9 mb-4">
+              <iframe src="https://naver.me/FO9k0QTh" frameborder="0" allowfullscreen> </iframe>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div id="delivery" class="delivery-info">
+              <h2 class="mb-4">배송 안내</h2>
+              <p>다옴떡카페는 매장에서 구매 가능하며, 전국배송도 가능합니다.</p>
+              <p>부산, 김해, 양산 일부 지역은 당일 배송이 가능합니다.</p>
+              <p>단, 그 외 지방의 경우 익일 배송으로 받으실 수 있습니다.</p>
+              <ul class="mt-3">
+                <li>배송시간: 평일 오전 10시 이전 주문 건에 한해 당일 배송</li>
+                <li>배송비: 부산권 3,000원 / 타지역 5,000원 (50,000원 이상 무료)</li>
+                <li>주문마감: 당일 배송은 오전 10시까지</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>연락처</h5>
+            <p><i class="bi bi-telephone"></i> 051-123-4567</p>
+            <p><i class="bi bi-clock"></i> 영업시간: 09:00 - 18:00 (매주 일요일 휴무)</p>
+          </div>
+          <div class="col-md-6">
+            <h5>SNS</h5>
+            <a href="https://www.instagram.com/daom_ricecake_cafe/#" class="text-white me-2"
+              ><i class="bi bi-instagram fs-4"></i
+            ></a>
+            <a href="https://blog.naver.com/daom_ricecake_cafe">Naver Blog</a>
+          </div>
+        </div>
+        <hr class="my-4 bg-secondary" />
+        <div class="text-center">
+          <p class="mb-0">© 2025 다옴떡카페. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
